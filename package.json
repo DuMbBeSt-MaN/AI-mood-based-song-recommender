@@ -16,9 +16,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cd frontend && vite build",
     "preview": "vite preview",
-    "server": "node server/index.js"
+    "server": "node backend/index.js",
+    "vercel-build": "cd frontend && npm install && vite build"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

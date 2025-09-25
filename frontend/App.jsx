@@ -11,7 +11,10 @@ function App() {
     setLoading(true);
     try {
       console.log('Submitting mood:', mood);
-      const response = await fetch('http://localhost:3001/api/recommend', {
+      const apiUrl = process.env.NODE_ENV === 'production' 
+        ? '/api/recommend' 
+        : 'http://localhost:3001/api/recommend';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
