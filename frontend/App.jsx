@@ -12,7 +12,7 @@ function App() {
     try {
       console.log('Submitting mood:', mood);
       const apiUrl = process.env.NODE_ENV === 'production' 
-        ? '/api/recommend' 
+        ? 'https://your-backend.onrender.com/api/recommend' // Replace with your Render URL
         : 'http://localhost:3001/api/recommend';
       const response = await fetch(apiUrl, {
         method: 'POST',

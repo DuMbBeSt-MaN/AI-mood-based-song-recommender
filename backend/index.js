@@ -28,7 +28,11 @@ console.log('PORT:', PORT);
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://ai-mood-based-song-recommender-yn86.vercel.app/', // Replace with your actual Vercel URL
+    /\.vercel\.app$/
+  ],
   credentials: true
 }));
 app.use(express.json());
