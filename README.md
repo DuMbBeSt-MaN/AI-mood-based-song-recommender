@@ -43,7 +43,7 @@ npm run dev
 
 The app will be available at:
 - Frontend: https://ai-mood-based-song-recommender-yn86-ly59a8fui.vercel.app/
-- Backend: http://localhost:3001
+- Backend: https://ai-mood-based-song-recommender-2.onrender.com
 
 ## How It Works
 
