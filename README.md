@@ -42,7 +42,7 @@ npm run dev
 ```
 
 The app will be available at:
-- Frontend: http://localhost:3000
+- Frontend: https://ai-mood-based-song-recommender-yn86-ly59a8fui.vercel.app/
 - Backend: http://localhost:3001
 
 ## How It Works
