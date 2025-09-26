@@ -12,7 +12,7 @@ function App() {
     try {
       console.log('Submitting mood:', mood);
       const apiUrl = process.env.NODE_ENV === 'production' 
-        ? 'https://your-backend.onrender.com/api/recommend' // Replace with your Render URL
+        ? 'https://ai-mood-based-song-recommender-2.onrender.com/api/recommend'
         : 'http://localhost:3001/api/recommend';
       const response = await fetch(apiUrl, {
         method: 'POST',
